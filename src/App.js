@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {} from "./firebaseInit";
+import Authenticate from "./components/auth-login/Authenticate";
+import DbToStore from "./components/auth-login/DbToStore";
+import ColorTheme from "./components/user-settings/ColorTheme";
+import Landing from "./pages/Landing";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Authenticate>
+              <DbToStore>
+                <ColorTheme>
+                  <Landing />
+                </ColorTheme>
+              </DbToStore>
+            </Authenticate>
+          }
+        />
+        <Route path="/home" element={<Home />} />
+        <Route path="/*" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

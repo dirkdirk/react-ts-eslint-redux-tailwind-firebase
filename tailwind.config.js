@@ -1,0 +1,31 @@
+module.exports = {
+  mode: "jit",
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  darkMode: "class",
+  theme: {
+    colors: {
+      white: "#eee",
+      black: "#0f172a",
+      grey: "#555",
+      "light-grey": "#ccc",
+      success: "#16a34a",
+      warn: "#ea580c",
+      danger: "#dc2626",
+      header: "#fb923c",
+      "dark-header": "#c2410c",
+      menu: "#8a95a0",
+      "dark-menu": "#1a2530",
+      bg: "#fef9f9",
+      "dark-bg": "#1f2c37",
+    },
+    screens: {
+      sm: "500px",
+      md: "768px",
+      lg: "1024",
+      xl: "1280",
+      "2xl": "1536",
+    },
+    extend: {},
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
