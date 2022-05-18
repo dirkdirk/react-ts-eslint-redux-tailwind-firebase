@@ -1,15 +1,15 @@
 # About this Project
 
-React-TS-ESLint-Redux-Tailwind-Firebase is a template to quickly start a React app with ... it's all in the name:
+`React-TS-ESLint-Redux-Tailwind-Firebase` is a template to quickly start a React app with ... it's all in the name:
 
 ### Packages
 
-React 17
-Router 6
-TypeScript 4.6 - with various type libraries
-ESLint 8.15 - with several plugins
-React-Redux 8.0 - with Toolkit 1.8
-Tailwind 3 - with Tailwind forms
+React 17<br>
+Router 6<br>
+TypeScript 4.6 - with various type libraries<br>
+ESLint 8.15 - with several plugins<br>
+React-Redux 8.0 - with Toolkit 1.8<br>
+Tailwind 3 - with Tailwind forms<br>
 
 ### Firebase 9
 
@@ -41,14 +41,14 @@ This template has a basic header body footer layout and also includes a light/da
 
 ### 3. Install dependencies and init firebase.
 
-- At the command line:
-  `npm install`
-  `npm install firebase`
-  `firebase init`
-  Select Hosting, Realtime database.
-  Use an existing project.
-  Use database.rules.json but do not overwrite it.
-  File name for hosting is: `build`
+- At the command line:<br>
+  `npm install`<br>
+  `npm install firebase`<br>
+  `firebase init`<br>
+  Select Hosting, Realtime database.<br>
+  Use an existing project.<br>
+  Use database.rules.json but do not overwrite it.<br>
+  File name for hosting is: `build`<br>
 
 ### 4. Add your Firebase credentials to the app.
 
@@ -67,7 +67,7 @@ initializeApp(firebaseConfig);
 
 ### 5. Enable sign-in providers at Firebase.
 
-- Turn on Email/Password and Google as Sign-In providers at:
+- Turn on Email/Password and Google as Sign-In providers at:<br>
   Authentication > Sign-in method > Sign-in providers
 
 ### 6. Set up locked down for devs only.
@@ -93,12 +93,12 @@ initializeApp(firebaseConfig);
 
 ## Start Reacting!
 
-Obviously update: `public/index.html`
+Obviously update: `public/index.html`<br>
 Also the favicons and logo.jpg in: `src/assets`
 
 - I like [Favic-o-matic](https://favicomatic.com) to generate all the favicons and code.
 
-Set your base colors in: `tailwind.config.js`
+Set your base colors in: `tailwind.config.js`<br>
 Go through the rest of the code base and build you app.
 
 &nbsp;
