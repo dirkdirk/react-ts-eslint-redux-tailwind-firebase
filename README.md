@@ -30,7 +30,7 @@ This template has a basic header body footer layout and also includes a light/da
 
 # Setup
 
-### 1. Repo or download this project to your machine.
+### 1. Fork or download this project to your machine.
 
 - Rename the folder to your app's name.
 - Remember to git your own versions from here forward!
